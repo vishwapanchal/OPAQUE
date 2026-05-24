@@ -1,6 +1,0 @@
-cryptography
-qrcode[pil]
-opencv-python
-fastapi
-uvicorn
-pillow
