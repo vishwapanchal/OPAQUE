@@ -1,0 +1,29 @@
+.page {
+  min-height: 100vh;
+  padding: 80px 40px 160px 40px;
+}
+
+.header {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  color: var(--text-main);
+}
+
+.countPill {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--grad-blue);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

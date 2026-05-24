@@ -1,0 +1,55 @@
+.island {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  height: 64px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: 100px;
+  box-shadow: var(--glass-shadow);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.navContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.tab {
+  flex: 1;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.tab.active {
+  color: var(--bg-base);
+}
+
+.activePill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--grad-coral), var(--grad-purple));
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.tabText {
+  font-size: 14px;
+  font-weight: 700;
+  z-index: 1;
+}

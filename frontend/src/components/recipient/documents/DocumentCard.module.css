@@ -1,0 +1,65 @@
+.card {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.card:hover {
+  transform: translateX(20px);
+}
+
+.fileIcon {
+  width: 80px;
+  height: 80px;
+  color: var(--grad-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileIcon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.content {
+  flex: 1;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.meta {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.deleteBtn {
+  padding: 24px;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.deleteBtn:hover {
+  color: var(--grad-coral);
+}
+
+.empty {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.empty p {
+  font-size: 2rem;
+  color: var(--text-muted);
+}

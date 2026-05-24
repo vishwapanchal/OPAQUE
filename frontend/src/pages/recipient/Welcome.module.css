@@ -1,0 +1,96 @@
+.page {
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.heroIcon {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--grad-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.surfaceBtn {
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+  transition: all 0.4s var(--ease-smooth);
+  border-radius: 32px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+.surfaceBtn:hover {
+  transform: translateX(10px);
+  background: rgba(255,255,255,0.8);
+}
+
+.surfaceBtn.primary {
+  background: linear-gradient(135deg, rgba(0, 198, 255, 0.1), rgba(0, 114, 255, 0.1));
+  color: var(--grad-blue);
+  border-color: rgba(0, 198, 255, 0.2);
+}
+
+.surfaceBtn.primary svg {
+  stroke: var(--grad-blue);
+}
+
+.btnContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btnTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.btnSub {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-family: monospace;
+  color: var(--text-muted);
+}

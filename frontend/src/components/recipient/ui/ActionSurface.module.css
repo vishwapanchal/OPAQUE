@@ -1,0 +1,52 @@
+.surface {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: var(--laser-cursor);
+  box-shadow: var(--glass-shadow);
+  width: 100%;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--grad-cyan), var(--grad-blue));
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.surface.primary .texture {
+  opacity: 1;
+}
+
+.surface.primary {
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon svg {
+  width: 20px; height: 20px;
+}

@@ -1,0 +1,89 @@
+.floatingNav {
+  position: fixed;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: 60px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: var(--glass-shadow);
+}
+
+.brandOrb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navItem {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navItem:hover {
+  color: var(--text-main);
+}
+
+.navItem.active {
+  color: var(--text-main);
+}
+
+.activeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--grad-coral);
+}
+
+.statusBubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-base);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.statusCore {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
